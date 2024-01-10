@@ -25,14 +25,14 @@ Partial Class Form4
         Me.lblFrom = New System.Windows.Forms.Label()
         Me.lblTo = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lblANY1 = New System.Windows.Forms.Label()
-        Me.lblANY2 = New System.Windows.Forms.Label()
-        Me.txtANYAmount = New System.Windows.Forms.TextBox()
+        Me.txtANYAmount1 = New System.Windows.Forms.TextBox()
         Me.txtANYAmount2 = New System.Windows.Forms.TextBox()
         Me.ComboBoxANY2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBoxAny3 = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxANY3 = New System.Windows.Forms.ComboBox()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
+        Me.txtAny2 = New System.Windows.Forms.TextBox()
+        Me.txtAny1 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,33 +66,13 @@ Partial Class Form4
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
-        'lblANY1
+        'txtANYAmount1
         '
-        Me.lblANY1.AutoSize = True
-        Me.lblANY1.Font = New System.Drawing.Font("Californian FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblANY1.Location = New System.Drawing.Point(100, 117)
-        Me.lblANY1.Name = "lblANY1"
-        Me.lblANY1.Size = New System.Drawing.Size(44, 19)
-        Me.lblANY1.TabIndex = 10
-        Me.lblANY1.Text = "ANY:"
-        '
-        'lblANY2
-        '
-        Me.lblANY2.AutoSize = True
-        Me.lblANY2.Font = New System.Drawing.Font("Californian FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblANY2.Location = New System.Drawing.Point(622, 117)
-        Me.lblANY2.Name = "lblANY2"
-        Me.lblANY2.Size = New System.Drawing.Size(44, 19)
-        Me.lblANY2.TabIndex = 11
-        Me.lblANY2.Text = "ANY:"
-        '
-        'txtANYAmount
-        '
-        Me.txtANYAmount.Font = New System.Drawing.Font("Ebrima", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtANYAmount.Location = New System.Drawing.Point(104, 152)
-        Me.txtANYAmount.Name = "txtANYAmount"
-        Me.txtANYAmount.Size = New System.Drawing.Size(100, 28)
-        Me.txtANYAmount.TabIndex = 12
+        Me.txtANYAmount1.Font = New System.Drawing.Font("Ebrima", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtANYAmount1.Location = New System.Drawing.Point(104, 152)
+        Me.txtANYAmount1.Name = "txtANYAmount1"
+        Me.txtANYAmount1.Size = New System.Drawing.Size(100, 28)
+        Me.txtANYAmount1.TabIndex = 12
         '
         'txtANYAmount2
         '
@@ -111,14 +91,14 @@ Partial Class Form4
         Me.ComboBoxANY2.TabIndex = 14
         Me.ComboBoxANY2.Text = "Choose your currency"
         '
-        'ComboBoxAny3
+        'ComboBoxANY3
         '
-        Me.ComboBoxAny3.FormattingEnabled = True
-        Me.ComboBoxAny3.Location = New System.Drawing.Point(626, 209)
-        Me.ComboBoxAny3.Name = "ComboBoxAny3"
-        Me.ComboBoxAny3.Size = New System.Drawing.Size(128, 21)
-        Me.ComboBoxAny3.TabIndex = 15
-        Me.ComboBoxAny3.Text = "Choose your currency"
+        Me.ComboBoxANY3.FormattingEnabled = True
+        Me.ComboBoxANY3.Location = New System.Drawing.Point(626, 209)
+        Me.ComboBoxANY3.Name = "ComboBoxANY3"
+        Me.ComboBoxANY3.Size = New System.Drawing.Size(128, 21)
+        Me.ComboBoxANY3.TabIndex = 15
+        Me.ComboBoxANY3.Text = "Choose your currency"
         '
         'btnQuit
         '
@@ -140,19 +120,37 @@ Partial Class Form4
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
         '
+        'txtAny2
+        '
+        Me.txtAny2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAny2.Location = New System.Drawing.Point(626, 114)
+        Me.txtAny2.Name = "txtAny2"
+        Me.txtAny2.Size = New System.Drawing.Size(100, 24)
+        Me.txtAny2.TabIndex = 20
+        Me.txtAny2.Text = "ANY:"
+        '
+        'txtAny1
+        '
+        Me.txtAny1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAny1.Location = New System.Drawing.Point(104, 114)
+        Me.txtAny1.Name = "txtAny1"
+        Me.txtAny1.Size = New System.Drawing.Size(100, 24)
+        Me.txtAny1.TabIndex = 21
+        Me.txtAny1.Text = "ANY:"
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtAny1)
+        Me.Controls.Add(Me.txtAny2)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.ComboBoxAny3)
+        Me.Controls.Add(Me.ComboBoxANY3)
         Me.Controls.Add(Me.ComboBoxANY2)
         Me.Controls.Add(Me.txtANYAmount2)
-        Me.Controls.Add(Me.txtANYAmount)
-        Me.Controls.Add(Me.lblANY2)
-        Me.Controls.Add(Me.lblANY1)
+        Me.Controls.Add(Me.txtANYAmount1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblTo)
         Me.Controls.Add(Me.lblFrom)
@@ -167,12 +165,12 @@ Partial Class Form4
     Friend WithEvents lblFrom As Label
     Friend WithEvents lblTo As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents lblANY1 As Label
-    Friend WithEvents lblANY2 As Label
-    Friend WithEvents txtANYAmount As TextBox
+    Friend WithEvents txtANYAmount1 As TextBox
     Friend WithEvents txtANYAmount2 As TextBox
     Friend WithEvents ComboBoxANY2 As ComboBox
-    Friend WithEvents ComboBoxAny3 As ComboBox
+    Friend WithEvents ComboBoxANY3 As ComboBox
     Friend WithEvents btnQuit As Button
     Friend WithEvents btnNext As Button
+    Friend WithEvents txtAny2 As TextBox
+    Friend WithEvents txtAny1 As TextBox
 End Class

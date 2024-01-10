@@ -26,13 +26,12 @@ Partial Class Form3
         Me.lblTo = New System.Windows.Forms.Label()
         Me.txtGBPAmount = New System.Windows.Forms.TextBox()
         Me.txtANYAmount = New System.Windows.Forms.TextBox()
-        Me.ComboBoxGBP1 = New System.Windows.Forms.ComboBox()
-        Me.lblGBP = New System.Windows.Forms.Label()
-        Me.lblANY = New System.Windows.Forms.Label()
         Me.ComboBoxAny1 = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.txtGBP = New System.Windows.Forms.TextBox()
+        Me.txtANY = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,35 +70,6 @@ Partial Class Form3
         Me.txtANYAmount.Name = "txtANYAmount"
         Me.txtANYAmount.Size = New System.Drawing.Size(100, 28)
         Me.txtANYAmount.TabIndex = 3
-        '
-        'ComboBoxGBP1
-        '
-        Me.ComboBoxGBP1.FormattingEnabled = True
-        Me.ComboBoxGBP1.Location = New System.Drawing.Point(122, 165)
-        Me.ComboBoxGBP1.Name = "ComboBoxGBP1"
-        Me.ComboBoxGBP1.Size = New System.Drawing.Size(128, 21)
-        Me.ComboBoxGBP1.TabIndex = 4
-        Me.ComboBoxGBP1.Text = "Choose your currency"
-        '
-        'lblGBP
-        '
-        Me.lblGBP.AutoSize = True
-        Me.lblGBP.Font = New System.Drawing.Font("Californian FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGBP.Location = New System.Drawing.Point(119, 101)
-        Me.lblGBP.Name = "lblGBP"
-        Me.lblGBP.Size = New System.Drawing.Size(41, 19)
-        Me.lblGBP.TabIndex = 6
-        Me.lblGBP.Text = "GBP:"
-        '
-        'lblANY
-        '
-        Me.lblANY.AutoSize = True
-        Me.lblANY.Font = New System.Drawing.Font("Californian FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblANY.Location = New System.Drawing.Point(574, 101)
-        Me.lblANY.Name = "lblANY"
-        Me.lblANY.Size = New System.Drawing.Size(44, 19)
-        Me.lblANY.TabIndex = 7
-        Me.lblANY.Text = "ANY:"
         '
         'ComboBoxAny1
         '
@@ -140,18 +110,35 @@ Partial Class Form3
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
+        'txtGBP
+        '
+        Me.txtGBP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGBP.Location = New System.Drawing.Point(123, 92)
+        Me.txtGBP.Name = "txtGBP"
+        Me.txtGBP.Size = New System.Drawing.Size(100, 24)
+        Me.txtGBP.TabIndex = 12
+        Me.txtGBP.Text = "GBP:"
+        '
+        'txtANY
+        '
+        Me.txtANY.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtANY.Location = New System.Drawing.Point(577, 96)
+        Me.txtANY.Name = "txtANY"
+        Me.txtANY.Size = New System.Drawing.Size(100, 24)
+        Me.txtANY.TabIndex = 13
+        Me.txtANY.Text = "ANY:"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtANY)
+        Me.Controls.Add(Me.txtGBP)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.ComboBoxAny1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.lblANY)
-        Me.Controls.Add(Me.lblGBP)
-        Me.Controls.Add(Me.ComboBoxGBP1)
         Me.Controls.Add(Me.txtANYAmount)
         Me.Controls.Add(Me.txtGBPAmount)
         Me.Controls.Add(Me.lblTo)
@@ -168,11 +155,10 @@ Partial Class Form3
     Friend WithEvents lblTo As Label
     Friend WithEvents txtGBPAmount As TextBox
     Friend WithEvents txtANYAmount As TextBox
-    Friend WithEvents ComboBoxGBP1 As ComboBox
-    Friend WithEvents lblGBP As Label
-    Friend WithEvents lblANY As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ComboBoxAny1 As ComboBox
     Friend WithEvents btnNext As Button
     Friend WithEvents btnQuit As Button
+    Friend WithEvents txtGBP As TextBox
+    Friend WithEvents txtANY As TextBox
 End Class
